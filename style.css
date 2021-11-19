@@ -42,6 +42,11 @@ a::before {
   background: var(--clr);
   transition: 1s;
   animation: animate 2s linear infinite;
+  animation-delay: calc(0.33s * var(--i));
+}
+
+a:hover::before {
+  width: 120%;
 }
 
 @keyframes animate {
