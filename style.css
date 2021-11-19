@@ -25,6 +25,7 @@ a {
   background: rgba(0, 0, 0, 0.5);
   margin: 40px;
   transition: 1s;
+  text-decoration: none;
   overflow: hidden;
 }
 
@@ -68,4 +69,14 @@ a::after {
 
 a:hover::after {
   background: var(--clr);
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 4px;
 }
